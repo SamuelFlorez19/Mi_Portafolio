@@ -1,25 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+
 
 *{
   box-sizing: border-box;
   font-family: 'Rethink Sans';
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 html{
   scroll-behavior: smooth;
-  background-color: #1D1D1D;
+  background-image: url(public/bg-img.webp);
 }
 
+
+
 .container{
-  background-color: #1D1D1D;
+  
+  display: flex;
+  flex-direction: column;
 
 }
 
 .navbar{
   
-  position: fixed;
+  
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -133,3 +142,106 @@ span{
   transition: transform 0.3s ease-in-out 0.1s;
   transform: translate(0);
 }
+
+
+.container-main{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+
+/* HERO */
+.hero-container{
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0 4rem;
+  min-height: 500px;
+  margin-top: 3rem;
+  
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+}
+.pretitle{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  color: #13f54b;
+}
+
+.title{
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: .33em;
+  font-family: "DynaPuff", system-ui;
+  font-weight: 500;
+  text-rendering: auto;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  text-align: center;
+}
+
+.hero-content{
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.4; 
+}
+
+.hero-description{
+  margin: 0;
+  color: #fff;
+  padding: 1rem;
+  word-spacing: 3px;
+  margin-top: 1rem;
+}
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.btn{
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.shadow__btn {
+  background: #25d162;
+  box-shadow: 0 0 25px #25d162;
+  display: flex;
+  gap: 5px;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #25d162,
+              0 0 25px #25d162,
+              0 0 50px #25d162,
+              0 0 100px #25d162;
+}
+
+.mas-info{
+  fill: #fff;
+}
+
+/*  ||HERO|| */
+
