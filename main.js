@@ -3,6 +3,20 @@ import './style.css'
 document.getElementById('miBoton').addEventListener('click', function() {
     window.location.href = 'contactame.html';
 });
+document.getElementById('tecnologias').addEventListener('click', function() {
+    window.location.href = 'tecnologias.html';
+});
+document.getElementById('sobremi').addEventListener('click', function() {
+    window.location.href = 'sobremi.html';
+});
+document.getElementById('portafolio').addEventListener('click', function() {
+    window.location.href = 'portafolio.html';
+});
+document.getElementById('inicio').addEventListener('click', function() {
+    window.location.href = 'index.html';
+});
+
+
 
 const projects = [
   {
